@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jueguito random para conocer a alguien :) ">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Jueguito randomhecho con amor</title>
+</head>
+<body>
+  
+
+    <section class="flex flex-col items-center justify-center h-screen bg-[#E5D6F3] p-10 g-10 relative z-10">
+  <img src="assets/cat-explode-cat-explosion.gif" alt="" class="absolute top-2 left-2 w-24 h-24 sm:w-32 sm:h-32 object-contain pointer-events-none z-0">
+<img src="assets/cat-meme-cat-eat.gif" alt="" class="absolute top-6 right-4 w-28 h-28 md:w-36 md:h-36 object-contain pointer-events-none z-0">
+<img src="assets/fadding-cat.gif" alt="" class="absolute bottom-8 left-0 w-28 h-28 lg:w-40 lg:h-40 object-contain pointer-events-none z-0">
+<img src="assets/flordepoia-cat.gif" alt="" class="absolute bottom-2 right-2 w-24 h-24 sm:w-32 sm:h-32 object-contain pointer-events-none z-0">
+<img src="assets/glorp-outer-space.gif" alt="" class="absolute top-1/2 left-0 -translate-y-1/2 w-20 h-20 md:w-28 md:h-28 object-contain pointer-events-none z-0">
+<img src="assets/wow-bored.gif" alt="" class="absolute bottom-1/2 right-0 translate-y-1/2 w-20 h-20 md:w-28 md:h-28 object-contain pointer-events-none z-0">
+        <h1 class="text-4xl font-bold text-gray-800 z-20" id="Question">
+            Jueguito random :P
+        </h1>
+        <button class="bg-red-400 rounded-[50%] p-12 text-white my-10" id="next-question">OwO</button>
+            
+    </section>
+
+<script>
+    let preguntas = [];
+    let indiceActual = 0;
+
+    // Función para barajar el array (Fisher-Yates)
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    fetch('preguntas.json')
+        .then(response => response.json())
+        .then(data => {
+            preguntas = data.preguntas;
+            shuffle(preguntas);
+        });
+
+    const preguntaElemento = document.getElementById('Question');
+    const boton = document.getElementById('next-question');
+
+    boton.addEventListener('click', () => {
+        if (preguntas.length === 0) return;
+        if (indiceActual >= preguntas.length) {
+            preguntaElemento.textContent = "¡Ya no hay más preguntas!";
+            return;
+        }
+        preguntaElemento.textContent = preguntas[indiceActual].pregunta;
+        indiceActual++;
+    });
+</script>
+</body>
+</html>
