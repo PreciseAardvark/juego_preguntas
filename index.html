@@ -20,7 +20,7 @@
         <h1 class="text-4xl font-bold text-gray-800 z-20" id="Question">
             Jueguito random :P
         </h1>
-        <button class="bg-red-400 rounded-[50%] p-12 text-white my-10" id="next-question">OwO</button>
+        <button class="bg-red-400 rounded-[50%] p-12 text-white my-10 hover:cursor-pointer" id="next-question">OwO</button>
             
     </section>
 
@@ -46,10 +46,15 @@
     const preguntaElemento = document.getElementById('Question');
     const boton = document.getElementById('next-question');
 
-    boton.addEventListener('click', () => {
-        if (preguntas.length === 0) return;
+     boton.addEventListener('click', () => {
+        if (preguntas.length === 0) {
+            preguntaElemento.textContent = "Cargando preguntas...";
+            return;
+        }
         if (indiceActual >= preguntas.length) {
-            preguntaElemento.textContent = "¡Ya no hay más preguntas!";
+            preguntaElemento.textContent = "¡Ya no hay más preguntas! 🎉";
+            boton.disabled = true;
+            boton.classList.add("opacity-50", "cursor-not-allowed");
             return;
         }
         preguntaElemento.textContent = preguntas[indiceActual].pregunta;
