@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jueguito random para conocer a alguien :) ">
+    <meta name="description" content="Jueguito random para conocer a alguien :D">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Jueguito randomhecho con amor</title>
+    <title>Jueguito para pasar tiempo</title>
 </head>
 <body>
-  
+<section class="flex flex-col items-center justify-center h-screen bg-[#E5D6F3] p-10 g-10 relative z-10">
+    <img src="assets/cat-explode-cat-explosion.gif" alt="cat-explode-cat-explosion" class="absolute top-0 left-1/4 w-20 md:w-32 md:h-32 object-contain pointer-events-none z-0">
+    <img src="assets/cat-meme-cat-eat.gif" alt="cat-meme-cat-eat" class="absolute top-0 right-0 w-18 md:w-44 md:h-44 object-contain pointer-events-none z-0">
+    <img src="assets/fadding-cat.gif" alt="fadding-cat" class="absolute top-0 left-1/2 w-18 md:w-40 md:h-40 object-contain pointer-events-none z-0">
+        <img src="assets/flordepoia-cat.gif" alt="flordepoia-cat" class="absolute top-0 left-0 w-18 md:w-32 md:h-32 object-contain pointer-events-none z-0">
 
-    <section class="flex flex-col items-center justify-center h-screen bg-[#E5D6F3] p-10 g-10 relative z-10">
-  <img src="assets/cat-explode-cat-explosion.gif" alt="" class="absolute top-2 left-2 w-24 h-24 sm:w-32 sm:h-32 object-contain pointer-events-none z-0">
-<img src="assets/cat-meme-cat-eat.gif" alt="" class="absolute top-6 right-4 w-28 h-28 md:w-36 md:h-36 object-contain pointer-events-none z-0">
-<img src="assets/fadding-cat.gif" alt="" class="absolute bottom-8 left-0 w-28 h-28 lg:w-40 lg:h-40 object-contain pointer-events-none z-0">
-<img src="assets/flordepoia-cat.gif" alt="" class="absolute bottom-2 right-2 w-24 h-24 sm:w-32 sm:h-32 object-contain pointer-events-none z-0">
-<img src="assets/glorp-outer-space.gif" alt="" class="absolute top-1/2 left-0 -translate-y-1/2 w-20 h-20 md:w-28 md:h-28 object-contain pointer-events-none z-0">
-<img src="assets/wow-bored.gif" alt="" class="absolute bottom-1/2 right-0 translate-y-1/2 w-20 h-20 md:w-28 md:h-28 object-contain pointer-events-none z-0">
-        <h1 class="text-4xl font-bold text-gray-800 z-20" id="Question">
-            Jueguito random :P
-        </h1>
-        <button class="bg-red-400 rounded-[50%] p-12 text-white my-10 hover:cursor-pointer" id="next-question">OwO</button>
-            
-    </section>
+    <img src="assets/glorp-outer-space.gif" alt="glorp-outer-space" class="absolute bottom-0 left-0 w-24 md:top-1/2 md:left-0 md:-translate-y-1/2 md:w-28 md:h-28  object-contain pointer-events-none z-0">
+    <img src="assets/wow-bored.gif" alt="wow-cat" class="absolute bottom-0 right-0 md:bottom-1/2 md:right-0 md:translate-y-1/2 w-30 md:w-28 md:h-28 object-contain pointer-events-none z-0">
 
+    <h1 class="text-4xl font-bold text-gray-800 z-20 mb-10" id="title">Selecciona un modo de juego :D</h1>
+    <div class="flex flex-row gap-4 mb-8" id="game-container">
+        <button class="bg-red-400 rounded-[20px] p-4 text-white hover:cursor-pointer" id="showQuestion">
+            Preguntas para conocerse
+        </button>
+        <button class="bg-red-400 rounded-[20px] p-4 text-white hover:cursor-pointer" id="showPreference">
+            ¿Qué prefieres?
+        </button>
+    </div>
+    <div class="flex flex-col items-center w-full">
+        <p id="Question" class="text-3xl text-pink-700 text-center min-h-[60px]">
+
+        </p>
+        <button class="bg-red-400 rounded-[50%] p-12 text-white my-10 hover:cursor-pointer hidden" id="next-question">OwO</button>
+    </div>
+</section>
+<footer>
+    <div class="flex flex-col items-center justify-center bg-[#E5D6F3] p-10">
+        <p class="text-gray-600 font-[8px]">Hecho por: <a href="https://github.com/PreciseAardvark" target="_blank" class="text-orange-700">Abraham</a> con cariño para <a href="https://www.twitch.tv/hannind" class="text-orange-700" target="_blank">hotqake</a> :D</p>
+    </div>
+</footer>
 <script>
     let preguntas = [];
     let indiceActual = 0;
+    let modo = ""; // "preguntas" o "preferencias"
 
-    // Función para barajar el array (Fisher-Yates)
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -36,30 +50,55 @@
         }
     }
 
-    fetch('preguntas.json')
-        .then(response => response.json())
-        .then(data => {
-            preguntas = data.preguntas;
-            shuffle(preguntas);
-        });
-
     const preguntaElemento = document.getElementById('Question');
-    const boton = document.getElementById('next-question');
-
-     boton.addEventListener('click', () => {
+    const botonPregunta = document.getElementById('showQuestion');
+    const botonPreferencia = document.getElementById('showPreference');
+    const botonNext = document.getElementById('next-question');
+    const gameContainer = document.getElementById('game-container');
+    const title = document.getElementById('title');
+    function mostrarPregunta() {
         if (preguntas.length === 0) {
             preguntaElemento.textContent = "Cargando preguntas...";
             return;
         }
         if (indiceActual >= preguntas.length) {
             preguntaElemento.textContent = "¡Ya no hay más preguntas! 🎉";
-            boton.disabled = true;
-            boton.classList.add("opacity-50", "cursor-not-allowed");
+            botonNext.disabled = true;
+            botonNext.classList.add("opacity-50", "cursor-not-allowed");
             return;
         }
         preguntaElemento.textContent = preguntas[indiceActual].pregunta;
         indiceActual++;
+    }
+
+    function iniciarModo(archivo, tipo) {
+        modo = tipo;
+        preguntas = [];
+        indiceActual = 0;
+        botonNext.disabled = false;
+        botonNext.classList.remove("opacity-50", "cursor-not-allowed");
+        preguntaElemento.textContent = "Cargando preguntas...";
+        botonNext.classList.remove("hidden");
+        title.classList.add("hidden");
+        gameContainer.classList.add("hidden");
+        fetch(archivo)
+            .then(response => response.json())
+            .then(data => {
+                preguntas = tipo === "preguntas" ? data.preguntas : data.preferencias;
+                shuffle(preguntas);
+                mostrarPregunta();
+            });
+    }
+
+    botonPregunta.addEventListener('click', () => {
+        iniciarModo('preguntas.json', 'preguntas');
     });
+
+    botonPreferencia.addEventListener('click', () => {
+        iniciarModo('preferencias.json', 'preferencias');
+    });
+
+    botonNext.addEventListener('click', mostrarPregunta);
 </script>
 </body>
 </html>

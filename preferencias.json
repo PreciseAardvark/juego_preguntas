@@ -1,0 +1,130 @@
+{
+    "preferencias":[
+    {
+      "id": 1,
+      "pregunta": "¿Tacos de pastor o de suadero?"
+    },
+    {
+        "id": 2,
+        "pregunta": "¿Chocokrispis o Zucaritas?"
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Café o té?"
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Perro o gato?"
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Mar o montaña?"
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Cine o teatro?"
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Pizza o hamburguesa?"
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Dulce o salado?"
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Verano o invierno?"
+    },
+    {
+        "id": 10,
+        "pregunta": "¿Viajar en avión o en coche?"
+    },
+    {
+        "id": 11,
+        "pregunta": "¿Leer un libro o ver una película?"
+    },
+    {
+        "id": 12,
+        "pregunta": "¿Cocinar o pedir comida a domicilio?"
+    },
+    {
+        "id": 13,
+        "pregunta": "¿Despertador o alarma del teléfono?"
+    },
+    {
+        "id": 14,
+        "pregunta": "¿Día o noche?"
+    },
+    {
+        "id": 15,
+        "pregunta": "¿Bailar o cantar?"
+    },{
+        "id": 16,
+        "pregunta": "¿Comedia o drama?"
+    },{
+      "id": 17,
+      "pregunta": "¿Netflix o YouTube?"
+    },
+    {
+      "id": 18,
+      "pregunta": "¿Desayuno o cena?"
+    },
+    {
+      "id": 19,
+      "pregunta": "¿Helado en cono o en vaso?"
+    },
+    {
+      "id": 20,
+      "pregunta": "¿Mensaje de texto o llamada?"
+    },
+    {
+      "id": 21,
+      "pregunta": "¿Ducha por la mañana o por la noche?"
+    },
+    {
+      "id": 22,
+      "pregunta": "¿Series o películas?"
+    },
+    {
+      "id": 23,
+      "pregunta": "¿Chocolate blanco o negro?"
+    },
+    {
+      "id": 24,
+      "pregunta": "¿iOS o Android?"
+    },
+    {
+      "id": 25,
+      "pregunta": "¿Campo o ciudad?"
+    },
+    {
+      "id": 26,
+      "pregunta": "¿Salir de fiesta o quedarse en casa?"
+    },
+    {
+      "id": 27,
+      "pregunta": "¿Tarde lluviosa o soleada?"
+    },
+    {
+      "id": 28,
+      "pregunta": "¿Pastel de chocolate o de vainilla?"
+    },
+    {
+      "id": 29,
+      "pregunta": "¿Videojuegos o juegos de mesa?"
+    },
+    {
+      "id": 30,
+      "pregunta": "¿Cantar en la ducha o bailar en la cocina?"
+    },
+    {
+      "id": 31,
+      "pregunta": "¿Fruta picada o jugo natural?"
+    },
+       {
+      "id": 32,
+      "pregunta": "¿Vainilla o chocolate?"
+    }
+    ]
+}

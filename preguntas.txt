@@ -1,0 +1,174 @@
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "Pregunta abierta"
+    },
+    {
+      "id": 2,
+      "pregunta": "Si tuvieras un superpoder, ¿Cuál sería?"
+    },
+    {
+      "id": 3,
+      "pregunta": "Si solo pudieras comer un alimento el resto de tu vida, ¿cuál sería?"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Cuál es tu película favorita?"
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Cuál es tu libro favorito?"
+    },
+    {
+      "id": 6,
+      "pregunta": "¿Con qué personaje de ficción te identificas más?"
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Cuál es tu canción favorita para darlo todo en el karaoke?"
+    },
+    {
+      "id": 8,
+      "pregunta": "Si pudieras salvar una cosa material de un incendio, ¿qué salvarías?"
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Qué es lo que más te aburre o te desagrada hacer?"
+    },
+    {
+      "id": 10,
+      "pregunta": "¿Qué harías si te ganaras la lotería?"
+    },
+    {
+      "id": 11,
+      "pregunta": "¿Cuál es tu recuerdo más feliz?"
+    },
+    {
+      "id": 12,
+      "pregunta": "¿Cuál es el deporte que disfrutas más como espectador?"
+    },
+    {
+      "id": 13,
+      "pregunta": "¿Cuál es tu mayor miedo?"
+    },
+    {
+      "id": 14,
+      "pregunta": "¿Qué lugar del mundo te gustaría visitar y por qué?"
+    },
+    {
+      "id": 15,
+      "pregunta": "¿Alguna vez has soñado algo que luego se ha hecho realidad?"
+    },
+    {
+      "id": 16,
+      "pregunta": "Si tuvieras 10 millones de seguidores en Instagram, ¿de qué temas hablarías?"
+    },
+    {
+      "id": 17,
+      "pregunta": "¿Qué es lo que más te gustaría aprender o probar?"
+    },
+    {
+      "id": 18,
+      "pregunta": "¿Preferirías vivir sin Internet o sin bañarte?"
+    },
+    {
+      "id": 19,
+      "pregunta": "¿Está bien mentir alguna vez?"
+    },
+    {
+      "id": 20,
+      "pregunta": "Pregunta abierta"
+    },
+    {
+      "id": 21,
+      "pregunta": "¿Qué es lo que más te gusta hacer en tu tiempo libre?"
+    },
+    {
+      "id": 22,
+      "pregunta": "¿Cuál es tu mayor logro hasta ahora?"
+    },
+    {
+      "id": 23,
+      "pregunta": "¿Qué es lo que más valoras en una amistad?"
+    },
+    {
+      "id": 24,
+      "pregunta": "¿Cambiarías tu estatura?"
+    },
+    {
+      "id": 25,
+      "pregunta": "¿Qué es lo que más te gusta de ti mismo?"
+    },
+    {
+        "id": 26,
+        "pregunta": "¿Qué es lo que más te gusta de tu trabajo?"
+    },
+    {
+      "id": 27,
+      "pregunta": "¿Cuál es el mejor consejo que te han dado?"
+    },
+    {
+      "id": 28,
+      "pregunta": "¿Cuál fue el día más feliz de tu vida?"
+    },
+    {
+      "id": 29,
+      "pregunta": "¿De qué decisión de tu vida te arrepientes más?"
+    },
+    {
+      "id": 30,
+      "pregunta": "Si pudieras viajar en el tiempo, ¿irías a tu pasado o a tu futuro?"
+    },
+    {
+      "id": 31,
+      "pregunta": "¿Por qué famoso te intercambiarías durante 24 horas?"
+    },
+    {
+      "id": 32,
+      "pregunta": "Pregunta abierta"
+    },
+    {
+      "id": 33,
+      "pregunta": "¿Qué es lo que más te gusta de tu ciudad?"
+    },
+    {
+      "id": 34,
+      "pregunta": "¿Cómo te gustaría ser recordado?"
+    },
+    {
+      "id": 35,
+      "pregunta": "¿Qué es lo que menos puedes soportar en un jefe?"
+    },
+    {
+      "id": 36,
+      "pregunta": "¿Qué habilidades o conocimientos te gustaría mejorar o aprender?"
+    },
+    {
+      "id": 37,
+      "pregunta": "¿Qué es lo que más te gusta de tus amigos?"
+    },
+    {
+      "id": 38,
+      "pregunta": "¿Eres supersticioso en algo?"
+    },
+    {
+      "id": 39,
+      "pregunta": "¿Soñabas algo de pequeño que, a estas alturas, ya hayas cumplido?"
+    },
+    {
+      "id": 40,
+      "pregunta": "Si pudieras comprarte un coche, ¿Cuál sería?"
+    }
+  ]
+}
+
+
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Comedia o drama?"
+    }
+    ]
+}
