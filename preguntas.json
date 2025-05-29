@@ -21,10 +21,6 @@
             "pregunta": "¿Cuándo fue la última vez que lloraste?"
         },
         {
-            "id": 6,
-            "pregunta": "¿Cómo te llevas con tu familia central (Papá, Mamá, hermanos)?"
-        },
-        {
             "id": 7,
             "pregunta": "¿Qué experiencia cambió tu forma de ver la vida?"
         },
@@ -39,10 +35,6 @@
         {
             "id": 10,
             "pregunta": "¿Qué es lo que más miedo te da perder?"
-        },
-        {
-            "id": 11,
-            "pregunta": "¿Cuál ha sido el momento más difícil de tu vida?"
         },
         {
             "id": 12,
